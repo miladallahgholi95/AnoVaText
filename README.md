@@ -42,4 +42,14 @@ anova_text = AnoVaText(texts, labels, num_important_words=10)
 important_words = anova_text.analyze()
 ```
 
+### Notes
+* The labels list should have the same length as the texts list. Each text should have a corresponding label.
+* If no significant difference is found for a word (based on the p-value threshold), it will not be considered an important word.
+* If there is no variance in the frequencies of a word within either the label group or the other group, the word will not be scored.
+
+## License
+This project is licensed under the MIT License.
+
+## Author
+Milad Allahgholi
 
